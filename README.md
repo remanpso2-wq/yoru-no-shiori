@@ -1,5 +1,7 @@
 # 夜の栞 — Yoru no Shiori
 
+[![yoru-quality](https://github.com/remanpso2-wq/yoru-no-shiori/actions/workflows/quality.yml/badge.svg)](https://github.com/remanpso2-wq/yoru-no-shiori/actions/workflows/quality.yml)
+
 仲間とひらく、小さな謎。オリジナル短編を1〜4人で解く協力ミステリーのポートフォリオです。
 
 ## v0.2で遊べること
@@ -66,7 +68,7 @@ Sites以外に展開する場合はWorker/D1のデプロイ設定とアクセス
 
 ## GitHub公開について
 
-CI定義 `.github/workflows/quality.yml` を用意しています。GitHub側でのCIは、専用リポジトリへ反映後に確認が必要です。サイトは現在所有者限定で、ソースの公開とゲームへの一般アクセスは別の設定です。
+CI定義 `.github/workflows/quality.yml` を用意しています。2026-10-17、GitHub Actionsで自動テスト33件・TypeScript型検査・ビルドが成功しました（[実行結果](https://github.com/remanpso2-wq/yoru-no-shiori/actions/runs/38997682311)）。サイトは現在所有者限定で、ソースの公開とゲームへの一般アクセスは別の設定です。
 
 秘密鍵・APIキー・実ユーザーデータは含めません。`.openai/hosting.json` のproject_idはこのSites配置の識別子です。第三者が複製する際は自分のSiteとして再登録してください。実行用環境ファイル、DB、認証トークンをコミットしないでください。
 

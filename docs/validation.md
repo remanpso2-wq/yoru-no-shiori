@@ -34,3 +34,11 @@
 - Git追跡ファイルに秘密鍵・代表的なAPIトークンのパターン、実DB、環境ファイル、TypeScript生成キャッシュがないことを検査。クライアントJSにサーバー専用の正解説明・証拠本文の検査文字列がないことを確認。
 
 パターン検査は完全な秘密情報検出を保証するものではありません。ブラウザE2E・視覚QA・実ユーザーの面白さ評価・GitHub CIは未実施です。
+
+
+## GitHub公開・CI — 2026-10-17
+
+[専用リポジトリ](https://github.com/remanpso2-wq/yoru-no-shiori)にv0.2ソースを公開。
+コードコミット `8c631e53ad474c0fec105a68af2a5943c7cd6946` の[GitHub Actions](https://github.com/remanpso2-wq/yoru-no-shiori/actions/runs/38997682311)で game-logic と types-and-build が成功。Node.js 22で33件のロジック/リクエストテスト、固定lockfileからの依存導入、TypeScript型検査、Worker/クライアントビルドを実行しました。
+
+上記の過去記録にある「GitHub CI未実施」は、この実行により解消。ブラウザE2E・視覚QA・実プレイ評価・AI接続は引き続き未実施です。ゲームのアクセス範囲は所有者限定のままです。
